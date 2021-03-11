@@ -8,20 +8,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderModule } from './shared/header/header.module';
+import { FooterModule } from './shared/footer/footer.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    PageNotFoundComponent
-  ],
+  declarations: [AppComponent, AboutComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderModule,
+    FooterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
