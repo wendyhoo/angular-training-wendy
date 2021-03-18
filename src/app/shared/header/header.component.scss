@@ -1,0 +1,14 @@
+.header-wrapper {
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  padding: 0 16px;
+
+  .header-bar {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .title {
+      font-size: 20px;
+    }
+  }
+}
