@@ -10,16 +10,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./homepage/homepage.module').then((m) => m.HomepageModule),
   },
-  // {
-  //   path: 'evaluation-form',
-  //   loadChildren: () =>
-  //     import('./evaluation-form/evaluation-form.module').then(
-  //       (m) => m.EvaluationFormModule
-  //     ),
-  // },
+  {
+    path: 'evaluation-form',
+    loadChildren: () =>
+      import('./evaluation-form/evaluation-form.module').then(
+        (m) => m.EvaluationFormModule
+      ),
+  },
 
   { path: 'about', component: AboutComponent },
-  { path: 'evaluation-form', component: EvaluationFormComponent },
+  // { path: 'evaluation-form', component: EvaluationFormComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
