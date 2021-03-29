@@ -1,0 +1,19 @@
+.form-wrapper {
+  padding: 24px;
+  mat-form-field {
+    width: 100%;
+  }
+
+  .form-submit-btn {
+    color: #fff;
+    background-color: #02ca23;
+    border: none;
+    padding: 16px;
+    width: 100%;
+
+    &:hover {
+      background-color: darkorange;
+      cursor: pointer;
+    }
+  }
+}

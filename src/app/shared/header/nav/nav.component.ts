@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PAGE_NOT_FOUND, PAGE_ROUTES_MAP } from 'src/app/utilities/utilities';
+import { PAGE_NOT_FOUND, PAGE_ROUTES_MAP } from '@utilities/utilities';
 
 @Component({
   selector: 'app-nav',

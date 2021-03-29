@@ -1,22 +1,43 @@
 <div class="form-wrapper container-fluid">
-  <form class="row" id="EvaluationForm">
-    <div class="col-lg-4 input-wrapper">
-      <mat-form-field class="example-full-width">
-        <mat-label>Favorite food</mat-label>
-        <input matInput placeholder="Ex. Pizza" value="Sushi" />
-      </mat-form-field>
+  <form id="EvaluationForm">
+    <div class="row">
+      <div class="col-lg-6 input-wrapper">
+        <mat-form-field>
+          <mat-label>Nama Pelajar</mat-label>
+          <input matInput placeholder="Enter name" value="" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6 input-wrapper">
+        <mat-form-field>
+          <mat-label>No. Matrik Pelajar</mat-label>
+          <input matInput value="" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6 input-wrapper">
+        <mat-form-field>
+          <mat-label>Nama Organisasi</mat-label>
+          <input matInput value="" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6 input-wrapper">
+        <mat-form-field>
+          <mat-label>Nama Penyelia</mat-label>
+          <input matInput value="" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6 input-wrapper">
+        <mat-form-field>
+          <mat-label>Tajuk Projek</mat-label>
+          <input matInput value="" />
+        </mat-form-field>
+      </div>
     </div>
-    <div class="col-lg-4 input-wrapper">
-      <mat-form-field class="example-full-width">
-        <mat-label>Favorite food 2</mat-label>
-        <input matInput placeholder="Ex. Pizza" value="" />
-      </mat-form-field>
-    </div>
-    <div class="col-lg-4 input-wrapper">
-      <mat-form-field class="example-full-width">
-        <mat-label>Favorite food 3</mat-label>
-        <input matInput placeholder="Ex. Pizza" value="" />
-      </mat-form-field>
+    <div class="row">
+      <div class="col-lg-2">
+        <button class="form-submit-btn" color="primary" type="submit">
+          Submit
+        </button>
+      </div>
     </div>
   </form>
 </div>
