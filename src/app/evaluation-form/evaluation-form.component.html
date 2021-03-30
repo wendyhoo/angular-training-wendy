@@ -1,34 +1,34 @@
 <div class="form-wrapper container-fluid">
-  <form id="EvaluationForm">
+  <form [formGroup]="form" id="EvaluationForm" (ngSubmit)="submitForm()">
     <div class="row">
       <div class="col-lg-6 input-wrapper">
         <mat-form-field>
           <mat-label>Nama Pelajar</mat-label>
-          <input matInput placeholder="Enter name" value="" />
+          <input formControlName="name" matInput placeholder="Enter name" />
         </mat-form-field>
       </div>
       <div class="col-lg-6 input-wrapper">
         <mat-form-field>
           <mat-label>No. Matrik Pelajar</mat-label>
-          <input matInput value="" />
+          <input formControlName="studentNo" matInput />
         </mat-form-field>
       </div>
       <div class="col-lg-6 input-wrapper">
         <mat-form-field>
           <mat-label>Nama Organisasi</mat-label>
-          <input matInput value="" />
+          <input formControlName="industryName" matInput />
         </mat-form-field>
       </div>
       <div class="col-lg-6 input-wrapper">
         <mat-form-field>
           <mat-label>Nama Penyelia</mat-label>
-          <input matInput value="" />
+          <input formControlName="industrySupervisor" matInput />
         </mat-form-field>
       </div>
       <div class="col-lg-6 input-wrapper">
         <mat-form-field>
           <mat-label>Tajuk Projek</mat-label>
-          <input matInput value="" />
+          <input formControlName="trainingDate" matInput />
         </mat-form-field>
       </div>
     </div>
