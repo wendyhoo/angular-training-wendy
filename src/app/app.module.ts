@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderModule } from './shared/header/header.module';
 import { FooterModule } from './shared/footer/footer.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, AboutComponent, PageNotFoundComponent],
@@ -22,6 +23,7 @@ import { FooterModule } from './shared/footer/footer.module';
     AppRoutingModule,
     HeaderModule,
     FooterModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

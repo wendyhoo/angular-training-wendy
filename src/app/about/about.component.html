@@ -1,1 +1,17 @@
-<p>about works!</p>
+<!-- <div class="about-wrapper">
+  <div class="row">
+    <dic class="col-xs-12"></dic>
+    <dic class="col-xs-12"></dic>
+    <dic class="col-xs-12"></dic>
+    <dic class="col-xs-12"></dic>
+  </div>
+</div> -->
+
+<div class="about-wrapper">
+  <div *ngIf="todoItem" class="row">
+    <div class="col-lg-12">{{ todoItem.completed }}</div>
+    <div class="col-lg-12">{{ todoItem.id }}</div>
+    <div class="col-lg-12">{{ todoItem.title }}</div>
+    <div class="col-lg-12">{{ todoItem.userId }}</div>
+  </div>
+</div>
